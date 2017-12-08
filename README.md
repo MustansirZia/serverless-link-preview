@@ -17,6 +17,7 @@ It is RESTful API service that will take in a website URL and reply with its <b>
 ## Installation.
 • Install <b>Up</b> globally.<br />
 `$ npm i -g up`
+<br />
 
 • Then, you've two choices. Either clone this repo, install local dependencies skip to the very last step.<br />
 `$ git clone https://github.com/MustansirZia/serverless-link-preview`<br />
@@ -28,9 +29,13 @@ OR follow along,
 
 • First, initialise the project yourself by creating these files.<br />
 `$ touch package.json up.json app.js`
+<br />
+
 
 • Then, add a few local packages.<br />
 `$ npm i express memory-cache @nunkisoftware/link-preview --save`
+<br />
+
 
 • Add a `scripts` section to your `package.json` so Up knows how to start your express server.
 ```json
@@ -51,6 +56,7 @@ OR follow along,
 }
 ```
 
+<br />
 • Write an express server inside `app.js` with a single GET endpoint at `/` which would take a query param `url`. This would be our website url whose preview we require.
 
 ```js
