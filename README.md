@@ -2,14 +2,14 @@
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
-### A serverless, scalable website preview service built using [Node.js](https://nodejs.org/en/), [Express.js](https://expressjs.com/), [link-preview](https://github.com/nunkisoftware/link-preview), [memory-cache](https://github.com/ptarjan/node-cache) and deployed using [Up](https://github.com/apex/up).
+### A serverless, scalable website preview service built using [Node.js](https://nodejs.org/en/), [Express.js](https://expressjs.com/), [memory-cache](https://github.com/ptarjan/node-cache) and deployed using [Up](https://github.com/apex/up).
 <br />
 
 This repository is basically a follow up to an article that I wrote [here](https://mustansirzia.com/posts/link-preview/).
 <br />
 <br />
 
-It is RESTful API service that will take in a website URL and reply with its <b>title</b>, <b>description</b>, a <b>thumbnail preview</b> of the first image found on the website along with the <b>site name</b>. It will be serverless and will run on <b>AWS Lambda</b> as a <b>FaaS</b>. Since there is no server or other hardware considerations it can scale to mammoth proportions as Amazon will automatically deploy copies of our exported functions depending on the load.
+It is RESTful API service that will take in a website URL and reply with its <b>title</b>, <b>description</b>, a <b>thumbnail preview</b> of the first image found on the website along with the <b>site name</b>. Scrapping is done using  [@nunkisoftware/link-preview](https://github.com/nunkisoftware/link-preview). It is serverless and runs on <b>AWS Lambda</b> as <b>Function as a Service</b> <b>(FaaS)</b>. Since there is no server or other hardware considerations it can scale to mammoth proportions as Amazon will automatically deploy copies of our exported functions depending on the load.
 <br />
 <br />
 
