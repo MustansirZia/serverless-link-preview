@@ -18,24 +18,26 @@ It is RESTful API service that will take in a website URL and reply with its <b>
 • Install <b>Up</b> globally.<br />
 `$ npm i -g up`
 <br />
+<br />
 
 • Then, you've two choices. Either clone this repo, install local dependencies skip to the very last step.<br />
 `$ git clone https://github.com/MustansirZia/serverless-link-preview`<br />
-<br />
+
 `$ npm i`
 
 <br />
 OR follow along,
+<br />
 
 • First, initialise the project yourself by creating these files.<br />
 `$ touch package.json up.json app.js`
 <br />
-
+<br />
 
 • Then, add a few local packages.<br />
 `$ npm i express memory-cache @nunkisoftware/link-preview --save`
 <br />
-
+<br />
 
 • Add a `scripts` section to your `package.json` so Up knows how to start your express server.
 ```json
@@ -57,6 +59,7 @@ OR follow along,
 ```
 
 <br />
+
 • Write an express server inside `app.js` with a single GET endpoint at `/` which would take a query param `url`. This would be our website url whose preview we require.
 
 ```js
@@ -143,7 +146,9 @@ Please note that we also employ an in memory cache to store recent website previ
 }
 ```
 <br />
+<br />
 <i>This is a one time step and won't be required for subsequent Up deployments.</i><br />
+
 • Finally, create the aws credentials file at `~/.aws/` and fill in your IAM credentials.
 
 
@@ -179,13 +184,15 @@ You should see a familiar JSON and this verifies our installation.</i>
 ```
 <br />
 Inside the same directory, deploy the service with a <b>single</b> command. <br />
-## `$ up`
+`$ up`
+<br />
+<br />
 
 After the deployment is complete, get the service's URL like so.<br />
 `$ up url`<br />
 
 The url with the query param could look similar to this. <br />
-`https://hfnuua77fd.execute-api.us-west-2.amazonaws.com/development?url=https://www.youtube.com/watch?v=NUWViXhvW`
+<a>`https://hfnuua77fd.execute-api.us-west-2.amazonaws.com/development?url=https://www.youtube.com/watch?v=NUWViXhvW`</a>
 
 And there you have it, your own serverless and scalable website preview service built and deployed on AWS Lambda.<br />
 Query with your favourite http client inside any application.
