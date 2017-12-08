@@ -193,7 +193,7 @@ After the deployment is complete, get the service's URL like so.<br />
 `$ up url`<br />
 
 The url with the query param could look similar to this. <br />
-[`https://hfnuua77fd.execute-api.us-west-2.amazonaws.com/development?url=https://www.youtube.com/watch?v=NUWViXhvW`](https://hfnuua77fd.execute-api.us-west-2.amazonaws.com/development?url=https://www.youtube.com/watch?v=NUWViXhvW)</a>
+[`https://hfnuua77fd.execute-api.us-west-2.amazonaws.com/development?url=https://www.youtube.com/watch?v=NUWViXhvW`](https://hfnuua77fd.execute-api.us-west-2.amazonaws.com/development?url=https://www.youtube.com/watch?v=NUWViXhvW3k)</a>
 
 And there you have it, your own serverless and scalable website preview service built and deployed on AWS Lambda.<br />
 Query with your favourite http client inside any application.
