@@ -2,7 +2,7 @@
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
-### A serverless, scalable website preview service using [Node.js](https://nodejs.org/en/), [Express.js](https://expressjs.com/), [memory-cache](https://github.com/ptarjan/node-cache) and [Up](https://github.com/apex/up).
+### A serverless, scalable website preview service built using [Node.js](https://nodejs.org/en/), [Express.js](https://expressjs.com/), [link-preview](https://github.com/nunkisoftware/link-preview), [memory-cache](https://github.com/ptarjan/node-cache) and deployed using [Up](https://github.com/apex/up).
 <br />
 
 This repository is basically a follow up to an article that I wrote [here](https://mustansirzia.com/posts/link-preview/).
