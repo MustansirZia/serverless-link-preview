@@ -9,7 +9,7 @@ This repository is basically a follow up to an article that I wrote [here](https
 <br />
 <br />
 
-It is a RESTful API service (or you could say a microservice) that will take in a website URL and reply with its <b>title</b>, <b>description</b>, a <b>thumbnail preview</b> of the first image found on the website along with the <b>site name</b>. Scrapping is done using  [@nunkisoftware/link-preview](https://github.com/nunkisoftware/link-preview). It is serverless and runs on <b>AWS Lambda</b> as <b>Function as a Service</b> <b>(FaaS)</b>. Since there is no server or other hardware considerations it can scale to mammoth proportions as Amazon will automatically deploy copies of our exported functions depending on the load.
+It is a RESTful API service (a microservice) that will take in a website URL and reply with its <b>title</b>, <b>description</b>, a <b>thumbnail preview</b> of the first image found on the website along with the <b>site name</b>. Scrapping is done using  [@nunkisoftware/link-preview](https://github.com/nunkisoftware/link-preview). It is serverless and runs on <b>AWS Lambda</b> as <b>Function as a Service</b> <b>(FaaS)</b>. Since there is no server or other hardware considerations it can scale to mammoth proportions as Amazon will automatically deploy copies of our exported functions depending on the load.
 <br />
 <br />
 
