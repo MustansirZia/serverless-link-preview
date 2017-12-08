@@ -2,7 +2,7 @@ const express = require('express');
 const linkPreview = require('@nunkisoftware/link-preview');
 const mCache = require('memory-cache');
 
-const app = express();
+const app = express(); 
 
 // Validation middleware to simply check the url query param.
 const validate = function (req, res, next) {
