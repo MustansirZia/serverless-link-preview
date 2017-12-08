@@ -181,4 +181,4 @@ Query with your favourite http client inside any application.
 • Documentation for <b>[Up.](https://up.docs.apex.sh/#introduction)</b>
 
 ## License.
-• MIT.
+• [MIT.](https://github.com/MustansirZia/serverless-link-preview/blob/master/LICENSE.txt)
