@@ -185,7 +185,7 @@ You should see a familiar JSON and this verifies our installation.</i>
 <br />
 Inside the same directory, deploy the service with a <b>single</b> command. <br />
 
-## `$ up`
+### `$ up`
 <br />
 <br />
 
