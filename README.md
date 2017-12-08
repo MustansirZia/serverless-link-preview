@@ -6,17 +6,24 @@
 <br />
 
 This repository is basically a follow up to an article that I wrote [here](https://mustansirzia.com/posts/link-preview/).
+<br />
+<br />
 
 It is RESTful API service that will take in a website URL and reply with its <b>title</b>, <b>description</b>, a <b>thumbnail preview</b> of the first image found on the website along with the <b>site name</b>. It will be serverless and will run on <b>AWS Lambda</b> as a <b>FaaS</b>. Since there is no server or other hardware considerations it can scale to mammoth proportions as Amazon will automatically deploy copies of our exported functions depending on the load.
+<br />
+<br />
+
 
 ## Installation.
-• Install Up globally.<br />
+• Install <b>Up</b> globally.<br />
 `$ npm i -g up`
 
 • Then, you've two choices. Either clone this repo, install local dependencies skip to the very last step.<br />
-`$ git clone `<br />
+`$ git clone https://github.com/MustansirZia/serverless-link-preview`<br />
+<br />
 `$ npm i`
 
+<br />
 OR follow along,
 
 • First, initialise the project yourself by creating these files.<br />
