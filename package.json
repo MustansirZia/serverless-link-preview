@@ -1,0 +1,31 @@
+{
+  "name": "serverless-link-preview",
+  "version": "0.0.1",
+  "description": "Serverless service to get website description and preview deployed on AWS Lambda.",
+  "main": "app.js",
+  "author": "Mustansir Zia",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MustansirZia/serverless-link-preview"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "location",
+    "gps",
+    "fused",
+    "android",
+    "play-services",
+    "npm",
+    "native"
+  ],
+  "dependencies": {
+    "@nunkisoftware/link-preview": "^0.2.0",
+    "express": "^4.16.2",
+    "memory-cache": "^0.2.0"
+  }
+}
