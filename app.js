@@ -1,8 +1,12 @@
 const express = require('express');
 const linkPreview = require('@nunkisoftware/link-preview');
 const mCache = require('memory-cache');
+const cors = require('cors');
 
-const app = express(); 
+const app = express();
+
+// Apply cors to provide asynchronous access from browsers.
+app.use(cors());
 
 // Validation middleware to simply check the url query param.
 const validate = function (req, res, next) {

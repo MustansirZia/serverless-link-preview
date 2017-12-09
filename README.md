@@ -35,7 +35,7 @@ OR follow along,
 <br />
 
 • Then, add a few local packages.<br />
-`$ npm i express memory-cache @nunkisoftware/link-preview --save`
+`$ npm i express memory-cache cors @nunkisoftware/link-preview --save`
 <br />
 <br />
 
@@ -66,8 +66,12 @@ OR follow along,
 const express = require('express');
 const linkPreview = require('@nunkisoftware/link-preview');
 const mCache = require('memory-cache');
+const cors = require('cors');
 
+// Apply cors to provide asynchronous access from browsers.
 const app = express();
+
+app.use(cors());
 
 // Validation middleware to simply check the url query param.
 const validate = function (req, res, next) {
