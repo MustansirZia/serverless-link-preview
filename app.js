@@ -57,7 +57,7 @@ app.get('/', validate, cache(180), function (req, res) {
     linkPreview(url)
           .then(function (response) {
 
-              if (!response.siteName) {
+              if (!response.title) {
                   // If the url given is incorrect.
                   res.status(400).json({ message: 'Invalid URL given.' });
                   return;
