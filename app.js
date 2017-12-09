@@ -54,12 +54,13 @@ app.get('/', validate, cache(180), function (req, res) {
     const url = req.query.url;
 
     // Get the actual response from link-preview.
-    linkPreview(url)
+    // Wait for 5 secs before calling a timeout.
+    linkPreview(url, 5000)
           .then(function (response) {
 
               if (!response.title) {
                   // If the url given is incorrect.
-                  res.status(400).json({ message: 'Invalid URL given.' });
+                  res.status(400).json({ message: 'Invalid URL given or timeout occured.' });
                   return;
               }
 
